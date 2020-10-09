@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import Header from './components/Header';
+import Conhecimentos from './components/Conhecimentos';
+import Seperator from './components/Separator';
+import Projects from './components/Projects';
+import About from './components/About';
+import Contato from './components/Contato';
+
+import GloblalStyles from './global/GlobalStyles';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Conhecimentos />
+    <Seperator />
+    <Projects />
+    <Seperator />
+    <About />
+    <Contato />
+    <GloblalStyles />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
